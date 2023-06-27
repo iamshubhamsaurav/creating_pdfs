@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Receipt</title>
+  </head>
+  <body><center>
+    {{#each users}}
+    <table border="1" style="border-collapse: collapse; margin: 10px;">
+      <tr>
+        <th colspan="2" align="center">Registrations</th>
+      </tr>
+      <tr>
+        <td>Event Name</td><td>{{this.eventName}}</td>
+      </tr>
+      <tr>
+        <td>Email</td><td>{{this.email}}</td>
+      </tr>
+      <tr>
+        <td>Phone No</td><td>{{this.phoneNo}}</td>
+      </tr>
+      <tr>
+        <td>Amount</td><td>{{this.amount}}</td>
+      </tr>
+      <tr>
+        <td>Participant One:</td><td>{{this.participantOne}}</td>
+      </tr>
+      <tr>
+        <td>Participant Two:</td><td>{{this.participantTwo}}</td>
+      </tr>
+      <tr>
+        <td>Participant Three:</td><td>{{this.participantThree}}</td>
+      </tr>
+      <tr>
+        <td>Participant Four:</td><td>{{this.participantFour}}</td>
+      </tr>
+      <tr>
+        <td>Participant Five:</td><td>{{this.participantFive}}</td>
+      </tr>
+      <tr>
+        <td>Payment Mode:</td><td>{{this.paymentMode}}</td>
+      </tr>
+      <tr>
+        <td>Payment Id:</td><td>{{this.paymentId}}</td>
+      </tr>
+      <tr>
+        <td>Date:</td><td>{{this.date}}</td>
+      </tr>
+    </table>
+    {{/each}}
+  </center>
+  </body>
+</html>
